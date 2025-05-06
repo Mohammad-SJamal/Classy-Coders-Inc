@@ -2,7 +2,7 @@ const Employee = require('./Employee.js').Employee;
 
 class SoftwareEngineer extends Employee {
     #programmingLanguages;
-    constructor(programmingLanguages){
+    constructor(name, position, salary, programmingLanguages){
         super();
         this.#programmingLanguages = programmingLanguages;
     }
@@ -12,7 +12,7 @@ class SoftwareEngineer extends Employee {
     }
 
     setProgrammingLanguages(languages){
-        this.#programmingLanguages = languages;
+        this.#programmingLanguages.push(languages);
     }
 
 }
