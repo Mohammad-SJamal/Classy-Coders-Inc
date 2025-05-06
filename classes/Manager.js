@@ -3,6 +3,7 @@ const Employee = require('./Employee.js').Employee;
 class Manager extends Employee {
     #employeesManaged
     constructor(department){
+        super();
         this.department = department;
         this.#employeesManaged = [];
     }
