@@ -83,10 +83,11 @@ describe("SalesPerson Tests", () => {
 
 describe("Employee Static Properties and Methods Tests", () => {
     test("getEmployees returns array of all employees", () => {
-        expect(Employees.getEmployees().length).toBe(5)
+        console.log(Employee.getEmployees());
+        expect(Employee.getEmployees().length).toBe(5)
     })
 
     test("getTotalPayroll returns salary of all employees created", () => {
-        expect(Employees.getTotalPayroll()).toBe(515000)
+        expect(Employee.getTotalPayroll()).toBe(515000)
     })
 })
