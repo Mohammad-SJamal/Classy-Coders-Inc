@@ -1,4 +1,6 @@
-class Manager {
+const Employee = require('./Employee.js').Employee;
+
+class Manager extends Employee {
     #employeesManaged
     constructor(department){
         this.department = department;
