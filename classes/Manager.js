@@ -12,7 +12,7 @@ class Manager extends Employee {
         return this.#employeesManaged;
     }
 
-    addEmployeeManaged(employee){
+    setEmployeesManaged(employee){
         this.#employeesManaged.push(employee);
     }
     
