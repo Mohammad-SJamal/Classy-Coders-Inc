@@ -5,9 +5,9 @@ Employee;
 class SalesPerson extends Employee {
   // Private properties
   #totalSales;
-  constructor(name, position, clients, totalSales) {
-    super(name, position);
-    this.clients = [];
+  constructor(name, position, salary, clients) {
+    super(name, position, salary);
+    this.clients = clients;
     this.#totalSales = 0;
   }
   makeSale(amount) {
